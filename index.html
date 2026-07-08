@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINH DUY | Fashion Show Music Producer & Sound Designer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter cho tối giản hiện đại & Cormorant Garamond cho serif tạp chí cao cấp -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Lucide Icons for minimal design -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Cormorant Garamond', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            black: '#050505',
+                            darkGray: '#0F0F0F',
+                            gray: '#161616',
+                            lightGray: '#A1A1AA',
+                            accent: '#FFFFFF',
+                        }
+                    },
+                    letterSpacing: {
+                        superwide: '0.25em',
+                        widest: '0.15em',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #050505;
+            color: #FFFFFF;
+            font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+        }
+        /* Custom scrollbar to keep layout clean */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #050505;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #222;
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #444;
+        }
+        .text-stroke {
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.12);
+            color: transparent;
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden selection:bg-white selection:text-black">
+
+    <!-- Header Navigation -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-[#050505]/65 backdrop-blur-md border-b border-white/5 py-5 px-6 md:px-12 transition-all duration-300">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="#" class="text-base md:text-lg font-bold tracking-[0.25em] hover:opacity-80 transition-opacity">
+                MINH DUY
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-10 text-xs font-semibold tracking-[0.2em] uppercase text-brand-lightGray">
+                <a href="#about" class="hover:text-white transition-colors">GIỚI THIỆU</a>
+                <a href="#services" class="hover:text-white transition-colors">DỊCH VỤ</a>
+                <a href="#workflow" class="hover:text-white transition-colors">QUY TRÌNH</a>
+                <a href="#pricing" class="hover:text-white transition-colors">GÓI DỊCH VỤ</a>
+                <a href="#clients" class="hover:text-white transition-colors">KHÁCH HÀNG</a>
+            </nav>
+
+            <a href="#contact" class="px-5 py-2.5 bg-white text-black text-xs tracking-widest font-bold uppercase transition-all duration-300 hover:bg-black hover:text-white hover:ring-1 hover:ring-white">
+                CONTACT ME
+            </a>
+        </div>
+    </header>
+
+    <!-- Cover / Hero Section (Editorial Split-Screen Layout without Image) -->
+    <section class="min-h-screen flex flex-col md:flex-row pt-20 md:pt-0">
+        
+        <!-- Left Side: Artist Name & Branding -->
+        <div class="flex-1 flex flex-col justify-between p-8 sm:p-12 md:p-16 lg:p-24 xl:p-28 relative z-10 bg-brand-black">
+            <div></div> <!-- Spacer for flex alignment -->
+            
+            <div class="my-auto py-12 md:py-0">
+                <p class="text-xs sm:text-sm tracking-[0.3em] text-brand-lightGray uppercase mb-5 font-semibold">
+                    FASHION SHOW MUSIC PRODUCER & SOUND DESIGNER
+                </p>
+                <h1 class="text-6xl sm:text-7xl lg:text-8xl xl:text-9xl font-black tracking-tight mb-8 leading-[0.9]">
+                    MINH<br>DUY
+                </h1>
+                <div class="h-[2px] w-20 bg-white mb-8"></div>
+                <blockquote class="text-lg sm:text-xl md:text-2xl font-light text-brand-lightGray italic max-w-lg leading-relaxed">
+                    "Original music crafted for runway experiences."
+                </blockquote>
+            </div>
+
+            <div class="flex items-center space-x-4 text-xs sm:text-sm tracking-[0.2em] text-brand-lightGray uppercase font-medium">
+                <span>SCROLL TO EXPLORE</span>
+                <i data-lucide="arrow-down" class="w-4 h-4 animate-bounce text-white"></i>
+            </div>
+        </div>
+
+        <!-- Right Side: Exquisite Typographic Philosophy Poster Layout -->
+        <div class="flex-1 bg-brand-darkGray border-t md:border-t-0 md:border-l border-white/5 flex flex-col justify-center p-8 sm:p-12 md:p-16 lg:p-24 xl:p-28 relative overflow-hidden">
+            <!-- Subtle abstract luxury ambient light glows behind text -->
+            <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-white/[0.02] rounded-full blur-[120px] pointer-events-none"></div>
+            <div class="absolute -left-20 -top-20 w-96 h-96 bg-white/[0.01] rounded-full blur-[120px] pointer-events-none"></div>
+
+            <!-- Typography Artwork -->
+            <div class="max-w-xl mx-auto md:mx-0 flex flex-col space-y-6 md:space-y-8 relative z-10">
+                <span class="text-[10px] tracking-[0.5em] text-white/30 uppercase font-mono block">PHILOSOPHY</span>
+                
+                <div class="font-serif text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white font-light leading-snug tracking-normal">
+                    When <span class="font-sans italic font-extralight text-white/50 text-stroke-sm">textures</span> <br class="hidden sm:inline">
+                    turn into <span class="font-serif italic font-medium text-white text-glow">frequencies</span>, <br>
+                    <span class="font-sans font-light tracking-widest text-white/30 uppercase text-xs sm:text-sm block my-4">and</span>
+                    <span class="font-sans italic font-extralight text-white/50">movement</span> <br class="hidden sm:inline">
+                    becomes <span class="font-serif italic font-semibold text-white text-glow">melody</span>.
+                </div>
+
+                <div class="h-[1px] w-12 bg-white/20 mt-4"></div>
+                
+                <p class="text-xs sm:text-sm tracking-[0.25em] text-white/40 uppercase font-sans font-semibold">
+                    — SOUND DESIGN FOR HIGH FASHION
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 md:py-36 px-6 md:px-12 bg-brand-darkGray border-y border-white/5 relative">
+        <div class="absolute top-10 right-10 text-9xl font-black text-stroke select-none pointer-events-none opacity-20 hidden lg:block uppercase tracking-wider">
+            PROFILE
+        </div>
+        <div class="max-w-5xl mx-auto">
+            <p class="text-sm tracking-[0.3em] text-white/50 uppercase mb-8 font-semibold">01 / GIỚI THIỆU</p>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 items-start">
+                <div class="md:col-span-4">
+                    <h2 class="text-3xl md:text-4xl font-black tracking-wide uppercase leading-tight">
+                        Âm Nhạc<br>Là Linh Hồn<br>Của Sàn Diễn.
+                    </h2>
+                </div>
+                <div class="md:col-span-8">
+                    <p class="text-lg sm:text-xl md:text-2xl font-light leading-relaxed text-zinc-300">
+                        Tôi chuyên sáng tác và thiết kế âm nhạc dành riêng cho các bộ sưu tập thời trang. Mỗi bản nhạc được xây dựng dựa trên concept, màu sắc, chất liệu và câu chuyện của nhà thiết kế nhằm tạo nên trải nghiệm trình diễn đồng nhất giữa âm thanh và hình ảnh.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 md:py-36 px-6 md:px-12 bg-[#050505]">
+        <div class="max-w-5xl mx-auto">
+            <p class="text-sm tracking-[0.3em] text-white/50 uppercase mb-16 font-semibold">02 / DỊCH VỤ CUNG CẤP</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
+                <div class="border-l-2 border-white/10 pl-6 hover:border-white transition-colors duration-300">
+                    <h3 class="text-xl font-bold tracking-wider uppercase mb-3">Original Fashion Show Music</h3>
+                    <p class="text-zinc-300 text-sm sm:text-base font-light leading-relaxed">Sáng tác âm nhạc độc bản, đo ni đóng giày cho tinh thần BST của bạn.</p>
+                </div>
+                <div class="border-l-2 border-white/10 pl-6 hover:border-white transition-colors duration-300">
+                    <h3 class="text-xl font-bold tracking-wider uppercase mb-3">Sound Design</h3>
+                    <p class="text-zinc-300 text-sm sm:text-base font-light leading-relaxed">Thiết kế không gian âm thanh chân thực, hiệu ứng điện ảnh sống động cho sân khấu.</p>
+                </div>
+                <div class="border-l-2 border-white/10 pl-6 hover:border-white transition-colors duration-300">
+                    <h3 class="text-xl font-bold tracking-wider uppercase mb-3">Runway Edit</h3>
+                    <p class="text-zinc-300 text-sm sm:text-base font-light leading-relaxed">Dựng và biên tập nhạc chuẩn xác, khớp hoàn hảo theo nhịp catwalk của từng người mẫu.</p>
+                </div>
+                <div class="border-l-2 border-white/10 pl-6 hover:border-white transition-colors duration-300">
+                    <h3 class="text-xl font-bold tracking-wider uppercase mb-3">Show Intro / Finale</h3>
+                    <p class="text-zinc-300 text-sm sm:text-base font-light leading-relaxed">Tạo điểm nhấn bùng nổ, khơi gợi cảm xúc người xem ở khoảnh khắc mở màn và kết show.</p>
+                </div>
+                <div class="border-l-2 border-white/10 pl-6 hover:border-white transition-colors duration-300">
+                    <h3 class="text-xl font-bold tracking-wider uppercase mb-3">Ambient & Cinematic Production</h3>
+                    <p class="text-zinc-300 text-sm sm:text-base font-light leading-relaxed">Sản xuất nhạc nền không gian, tạo chiều sâu nghệ thuật đậm chất điện ảnh.</p>
+                </div>
+                <div class="border-l-2 border-white/10 pl-6 hover:border-white transition-colors duration-300">
+                    <h3 class="text-xl font-bold tracking-wider uppercase mb-3">Luxury Electronic</h3>
+                    <p class="text-zinc-300 text-sm sm:text-base font-light leading-relaxed">Âm nhạc điện tử hiện đại, sang trọng, thời thượng phù hợp với xu thế quốc tế.</p>
+                </div>
+                <div class="border-l-2 border-white/10 pl-6 hover:border-white transition-colors duration-300 md:col-span-2">
+                    <h3 class="text-xl font-bold tracking-wider uppercase mb-3">Live Show Support</h3>
+                    <p class="text-zinc-300 text-sm sm:text-base font-light leading-relaxed">Hỗ trợ vận hành kỹ thuật âm thanh trực tiếp tại rehearsal và đêm diễn để đảm bảo không xảy ra sai sót.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Section -->
+    <section id="workflow" class="py-24 md:py-36 px-6 md:px-12 bg-brand-darkGray border-y border-white/5">
+        <div class="max-w-5xl mx-auto">
+            <p class="text-sm tracking-[0.3em] text-white/50 uppercase mb-16 font-semibold">03 / QUY TRÌNH LÀM VIỆC</p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Stage 1 -->
+                <div class="p-8 bg-black/40 border border-white/5 hover:border-white/20 transition-all duration-300 flex flex-col justify-between min-h-[220px]">
+                    <div>
+                        <span class="text-xs font-mono text-white/30 tracking-widest block mb-4 font-bold">STAGE 01</span>
+                        <h4 class="text-lg font-bold uppercase tracking-wider mb-3">Concept & Brief</h4>
+                        <ul class="text-sm sm:text-base text-zinc-300 space-y-2 font-light">
+                            <li>1. Nhận ý tưởng BST</li>
+                            <li>2. Trao đổi sâu cùng NTK</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Stage 2 -->
+                <div class="p-8 bg-black/40 border border-white/5 hover:border-white/20 transition-all duration-300 flex flex-col justify-between min-h-[220px]">
+                    <div>
+                        <span class="text-xs font-mono text-white/30 tracking-widest block mb-4 font-bold">STAGE 02</span>
+                        <h4 class="text-lg font-bold uppercase tracking-wider mb-3">Mood & Demo</h4>
+                        <ul class="text-sm sm:text-base text-zinc-300 space-y-2 font-light">
+                            <li>3. Moodboard âm thanh</li>
+                            <li>4. Sản xuất bản Demo</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Stage 3 -->
+                <div class="p-8 bg-black/40 border border-white/5 hover:border-white/20 transition-all duration-300 flex flex-col justify-between min-h-[220px]">
+                    <div>
+                        <span class="text-xs font-mono text-white/30 tracking-widest block mb-4 font-bold">STAGE 03</span>
+                        <h4 class="text-lg font-bold uppercase tracking-wider mb-3">Finalization</h4>
+                        <ul class="text-sm sm:text-base text-zinc-300 space-y-2 font-light">
+                            <li>5. Hoàn thiện tác phẩm</li>
+                            <li>6. Mix & Master tiêu chuẩn</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Stage 4 -->
+                <div class="p-8 bg-black/40 border border-white/5 hover:border-white/20 transition-all duration-300 flex flex-col justify-between min-h-[220px]">
+                    <div>
+                        <span class="text-xs font-mono text-white/30 tracking-widest block mb-4 font-bold">STAGE 04</span>
+                        <h4 class="text-lg font-bold uppercase tracking-wider mb-3">Delivery</h4>
+                        <ul class="text-sm sm:text-base text-zinc-300 space-y-2 font-light">
+                            <li>7. Chỉnh theo Rehearsal</li>
+                            <li>8. Bàn giao bản cuối</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-24 md:py-36 px-6 md:px-12 bg-[#050505]">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <p class="text-sm tracking-[0.3em] text-white/50 uppercase mb-4 font-semibold">04 / ĐẦU TƯ CHO SÀN DIỄN</p>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-wide">CÁC GÓI DỊCH VỤ</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Basic -->
+                <div class="p-8 bg-brand-darkGray border border-white/5 flex flex-col justify-between hover:border-white/15 transition-all">
+                    <div>
+                        <span class="text-xs tracking-widest text-brand-lightGray uppercase font-bold">01 / BASIC</span>
+                        <div class="mt-4 mb-6">
+                            <span class="text-2xl sm:text-3xl font-bold text-white">3 – 5 Triệu</span>
+                            <span class="text-xs text-brand-lightGray block mt-1">VND / Dự án</span>
+                        </div>
+                        <ul class="space-y-3 text-sm sm:text-base text-zinc-300 font-light border-t border-white/10 pt-6">
+                            <li class="flex items-start gap-2">
+                                <span class="text-white font-bold">•</span>
+                                <span>1 track nhạc gốc (3–5 phút)</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-white font-bold">•</span>
+                                <span>Mix & Master tiêu chuẩn hoàn thiện</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-white font-bold">•</span>
+                                <span>Hỗ trợ làm bản Extended Mix</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-white font-bold">•</span>
+                                <span>Bản quyền sử dụng tác phẩm</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="mt-8 block text-center py-3 border border-white/10 hover:bg-white hover:text-black transition-all text-sm tracking-widest font-bold uppercase">CHỌN GÓI</a>
+                </div>
+
+                <!-- Standard -->
+                <div class="p-8 bg-brand-darkGray border border-white/15 relative flex flex-col justify-between hover:scale-[1.01] transition-all">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-white text-black px-3 py-1 text-[9px] font-bold tracking-widest uppercase">POPULAR</div>
+                    <div>
+                        <span class="text-xs tracking-widest text-brand-lightGray uppercase font-bold">02 / STANDARD</span>
+                        <div class="mt-4 mb-6">
+                            <span class="text-2xl sm:text-3xl font-bold text-white">7 – 12 Triệu</span>
+                            <span class="text-xs text-brand-lightGray block mt-1">VND / Dự án</span>
+                        </div>
+                        <ul class="space-y-3 text-sm sm:text-base text-zinc-300 font-light border-t border-white/10 pt-6">
+                            <li class="flex items-start gap-2">
+                                <span class="text-white font-bold">•</span>
+                                <span>Nhạc sáng tác riêng theo concept BST</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-white font-bold">•</span>
+                                <span>Thiết kế Sound Design chuyên biệt</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-white font-bold">•</span>
+                                <span>Hỗ trợ cắt ráp theo timeline catwalk</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="mt-8 block text-center py-3 bg-white/10 hover:bg-white hover:text-black transition-all text-sm tracking-widest font-bold uppercase">CHỌN GÓI</a>
+                </div>
+
+                <!-- Premium -->
+                <div class="p-8 bg-brand-darkGray border border-white/5 flex flex-col justify-between hover:border-white/15 transition-all">
+                    <div>
+                        <span class="text-xs tracking-widest text-brand-lightGray uppercase font-bold">03 / PREMIUM</span>
+                        <div class="mt-4 mb-6">
+                            <span class="text-2xl sm:text-3xl font-bold text-white">15 – 25 Triệu</span>
+                            <span class="text-xs text-brand-lightGray block mt-1">VND / Dự án</span>
+                        </div>
+                        <ul class="space-y-3 text-sm sm:text-base text-zinc-300 font-light border-t border-white/10 pt-6">
+                            <li class="flex items-start gap-2">
+                                <span class="text-white font-bold">•</span>
+                                <span>Sáng tác độc quyền hoàn toàn</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-white font-bold">•</span>
+                                <span>Phát triển nhiều lớp nhạc tinh xảo</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-white font-bold">•</span>
+                                <span>Sound Design chuẩn điện ảnh</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-white font-bold">•</span>
+                                <span>Chỉnh sửa không giới hạn trong dự án</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-white font-bold">•</span>
+                                <span>Hỗ trợ trực tiếp Rehearsal và Show diễn</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="mt-8 block text-center py-3 border border-white/10 hover:bg-white hover:text-black transition-all text-sm tracking-widest font-bold uppercase">CHỌN GÓI</a>
+                </div>
+
+                <!-- Luxury / Signature -->
+                <div class="p-8 bg-brand-black border-2 border-white flex flex-col justify-between hover:bg-neutral-900 transition-all duration-300">
+                    <div>
+                        <span class="text-xs tracking-widest text-white uppercase font-black">04 / LUXURY SIGNATURE</span>
+                        <div class="mt-4 mb-6">
+                            <span class="text-2xl sm:text-3xl font-black text-white">Báo giá riêng</span>
+                            <span class="text-xs text-zinc-400 block mt-1">(Dự kiến từ 30 triệu+)</span>
+                        </div>
+                        <ul class="space-y-3 text-sm sm:text-base text-zinc-200 font-light border-t border-white/20 pt-6">
+                            <li class="flex items-start gap-2">
+                                <span class="text-white font-bold">•</span>
+                                <span>Sản xuất âm nhạc toàn bộ quy mô Show</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-white font-bold">•</span>
+                                <span>Nhiều track chuyển cảnh mượt mà</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-white font-bold">•</span>
+                                <span>Intro / Outro hoành tráng độc bản</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-white font-bold">•</span>
+                                <span>Hiệu ứng sân khấu kỹ thuật cao</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-white font-bold">•</span>
+                                <span>Làm việc trực tiếp cùng Đạo diễn & NTK</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="mt-8 block text-center py-3 bg-white text-black hover:bg-black hover:text-white hover:ring-1 hover:ring-white transition-all text-sm tracking-widest font-bold uppercase">YÊU CẦU DỰ ÁN</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section id="clients" class="py-24 md:py-36 px-6 md:px-12 bg-brand-darkGray border-t border-white/5">
+        <div class="max-w-5xl mx-auto">
+            <p class="text-sm tracking-[0.3em] text-white/50 uppercase mb-16 text-center font-semibold">05 / ĐỐI TÁC TIN CẬY</p>
+            
+            <!-- Symmetrical centrally-aligned brand list -->
+            <div class="flex flex-wrap justify-center items-center gap-x-12 md:gap-x-16 gap-y-10 max-w-4xl mx-auto opacity-70">
+                <span class="text-base sm:text-lg md:text-xl font-black tracking-[0.18em] text-center hover:opacity-100 transition-opacity whitespace-nowrap">MR WORLD</span>
+                <span class="text-base sm:text-lg md:text-xl font-black tracking-[0.18em] text-center hover:opacity-100 transition-opacity whitespace-nowrap">MR WORLD VIETNAM</span>
+                <span class="text-base sm:text-lg md:text-xl font-black tracking-[0.18em] text-center hover:opacity-100 transition-opacity whitespace-nowrap">VBFF</span>
+                <span class="text-base sm:text-lg md:text-xl font-black tracking-[0.18em] text-center hover:opacity-100 transition-opacity whitespace-nowrap">MISS WORLD VIET NAM</span>
+                <span class="text-base sm:text-lg md:text-xl font-black tracking-[0.18em] text-center hover:opacity-100 transition-opacity whitespace-nowrap">MISS GRAND VIETNAM</span>
+                <span class="text-base sm:text-lg md:text-xl font-black tracking-[0.18em] text-center hover:opacity-100 transition-opacity whitespace-nowrap">SEN VANG ENTERTAINMENT</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact Section -->
+    <footer id="contact" class="bg-black py-24 md:py-32 px-6 md:px-12 border-t border-white/10">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div>
+                <p class="text-sm tracking-[0.3em] text-white/50 uppercase mb-4 font-semibold">LIÊN HỆ HỢP TÁC</p>
+                <h2 class="text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-wider leading-tight mb-10">
+                LET'S CREATE THE SOUND OF FASHION.
+            </h2>
+            <div class="space-y-6">
+                <a href="mailto:djminhduy.official@gmail.com" class="flex items-center gap-4 text-brand-lightGray hover:text-white transition-colors group">
+                    <span class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-white transition-all">
+                        <i data-lucide="mail" class="w-5 h-5"></i>
+                    </span>
+                    <span class="text-base sm:text-lg font-medium">djminhduy.official@gmail.com</span>
+                </a>
+                <a href="tel:0392937667" class="flex items-center gap-4 text-brand-lightGray hover:text-white transition-colors group">
+                    <span class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-white transition-all">
+                        <i data-lucide="phone" class="w-5 h-5"></i>
+                    </span>
+                    <span class="text-base sm:text-lg font-medium">039 293 7667 (Zalo / Phone)</span>
+                </a>
+            </div>
+            </div>
+            <div class="flex flex-col justify-end text-left lg:text-right mt-12 lg:mt-0">
+                <p class="text-xs tracking-[0.3em] text-brand-lightGray/40 uppercase mb-2">&copy; 2026 MINH DUY. ALL RIGHTS RESERVED.</p>
+                <p class="text-xs tracking-[0.3em] text-brand-lightGray/30 uppercase">SOUND DESIGN FOR HIGH FASHION</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initializing icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
